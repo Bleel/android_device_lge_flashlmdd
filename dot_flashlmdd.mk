@@ -24,11 +24,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/lge/flashlmdd/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Device identifiers
 
-PRODUCT_NAME := lineage_flashlmdd
+PRODUCT_NAME := dot_flashlmdd
 PRODUCT_DEVICE := flashlmdd
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
@@ -46,3 +46,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := "lge/flashlmdd_lao_com/flashlmdd:10/QKQ1.191021.002/202480518b6a5:user/release-keys"
 
+#Build configs
+WITH_GAPPS := true
+TARGET_BOOT_ANIMATION_RES := 1440
