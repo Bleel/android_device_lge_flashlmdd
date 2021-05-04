@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/dot_flashlmdd.mk
+    $(LOCAL_DIR)/evolution_flashlmdd.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_flashlmdd-userdebug \
-    dot_flashlmdd-eng
+    evolution_flashlmdd-userdebug \
+    evolution_flashlmdd-eng
